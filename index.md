@@ -1,37 +1,81 @@
-## Welcome to GitHub Pages
+## MC207 Practical File
 
-You can use the [editor on GitHub](https://github.com/aviral36/MC207/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+NOTE: The version of MATLAB® used is v2015b. Syntax may differ while switching to different versions of MATLAB®.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### #1. Formulate and solve Van Der Pol Equation using MATLAB. Plot the graph for the same for different values of Mu. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+# Code for Mu=1
 
-1. Numbered
-2. List
+type vanderpoldemo 
+tspan=[0,20]; 
+y0=[2;0]; 
+Mu=1; 
+ode=@(t,y)vanderpoldemo(t,y,Mu); 
+[t,y]=ode45(ode,tspan,y0);
 
-**Bold** and _Italic_ and `Code` text
+/* Plot of the Solution */
+plot(t,y(:,1)) 
+xlabel('t') 
+ylabel('solution y') 
+title('Van Der Pol Equation, \Mu=1')
 
-[Link](url) and ![Image](src)
 ```
+[View Output for Mu=1](https://user-images.githubusercontent.com/21241570/29624967-107157d6-8848-11e7-8743-be74b7b60c58.jpg) 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aviral36/MC207/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```markdown
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Code for Mu=10
+`
+type vanderpoldemo 
+tspan=[0,20]; 
+y0=[2;0]; 
+Mu=10; 
+ode=@(t,y)vanderpoldemo(t,y,Mu); 
+[t,y]=ode45(ode,tspan,y0);
+
+/* Plot of the Solution */
+plot(t,y(:,1)) 
+xlabel('t') 
+ylabel('solution y') 
+title('Van Der Pol Equation, Mu=10')
+`
+```
+[View Output for Mu=10](https://user-images.githubusercontent.com/21241570/29624973-15ab18f4-8848-11e7-89f9-e86f0cb3dec8.jpg)
+
+
+
+```markdown
+
+
+# Code for Mu=0.15
+`
+type vanderpoldemo 
+tspan=[0,20]; 
+y0=[2;0]; 
+Mu=0.15; 
+ode=@(t,y)vanderpoldemo(t,y,Mu); 
+[t,y]=ode45(ode,tspan,y0);
+
+/* Plot of the Solution */
+plot(t,y(:,1)) 
+xlabel('t') 
+ylabel('solution y') 
+title('Van Der Pol Equation, Mu=0.15')
+`
+```
+[View Output for Mu=0.15](https://user-images.githubusercontent.com/21241570/29624936-00c6dba8-8848-11e7-8cdc-ffe88975fa9e.jpg)
+
+<hr>
+
+
+### Contact for Support
+
+This file is dynamically edited according to problems given during practical classes. For any support, write an email to me at [aviral_bt2k16@dtu.ac.in](aviral_bt2k16@dtu.ac.in)
