@@ -78,8 +78,7 @@ title('Van Der Pol Equation, Mu=0.15')
 
 ### Contact for Support
 
-This file is dynamically edited according to problems given during practical classes. For any support, write to me at my
-<a href="mailto:aviral_bt2k16@dtu.ac.in?" target="_top">electronic mail.</a>
+This file is dynamically edited according to problems given during practical classes. For any support, write me to <a href="mailto:aviral_bt2k16@dtu.ac.in?" target="_top">electronic mail.</a>
 <br>
 ###### Aviral Sharma, 
 ###### Department of Applied Mathematics,
