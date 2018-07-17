@@ -50,28 +50,17 @@ title('Van Der Pol Equation, Mu=10')
 ```
 [View Output for Mu=10](https://user-images.githubusercontent.com/21241570/29624973-15ab18f4-8848-11e7-89f9-e86f0cb3dec8.jpg)
 
+#
+
+### #2. Write scripts to solve linear ODE with constant coefficients and draw their graphs. 
 
 
 ```markdown
 
+y=dsolve('D2y+Dy=-2*y','y(0)=2','Dy(0)=2');
+ezplot(y,[0,20])
 
-# Code for Mu=0.15
-`
-type vanderpoldemo 
-tspan=[0,20]; 
-y0=[2;0]; 
-Mu=0.15; 
-ode=@(t,y)vanderpoldemo(t,y,Mu); 
-[t,y]=ode45(ode,tspan,y0);
-
-/* Plot of the Solution */
-plot(t,y(:,1)) 
-xlabel('t') 
-ylabel('solution y') 
-title('Van Der Pol Equation, Mu=0.15')
-`
 ```
-[View Output for Mu=0.15](https://user-images.githubusercontent.com/21241570/29624936-00c6dba8-8848-11e7-8cdc-ffe88975fa9e.jpg)
 
 <hr>
 
