@@ -65,7 +65,7 @@ ezplot(y,[0,20])
 
 #
 
-### #3. Write a program to find the solutions of the equation=Ax using eigenvalues and eigenvector.
+### #3. Write a program to find the solutions of the equation x=Ax using eigenvalues and eigenvector.
 
 
 ```markdown
