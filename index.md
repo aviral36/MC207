@@ -50,7 +50,7 @@ title('Van Der Pol Equation, Mu=10')
 ```
 [View Output for Mu=10](https://user-images.githubusercontent.com/21241570/29624973-15ab18f4-8848-11e7-89f9-e86f0cb3dec8.jpg)
 
-<hr>
+<br>
 
 ### #2. Write scripts to solve linear ODE with constant coefficients and draw their graphs. 
 
@@ -63,7 +63,7 @@ ezplot(y,[0,20])
 ```
 
 
-<hr>
+<br>
 
 ### #3. Write a program to find the solutions of the equation x=Ax using eigenvalues and eigenvector.
 
@@ -107,7 +107,7 @@ unique_eignvalues=unique(eignvalues);
 
 ```
 
-<hr>
+<br>
 
 ### #4. Write a program to solve initial value problem using eigenvalue-eigenvector method.
 
